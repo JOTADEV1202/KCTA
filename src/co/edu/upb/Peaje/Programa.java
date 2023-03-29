@@ -69,9 +69,12 @@ public class Programa {
 	            		int valorEntregado = lectura.nextInt();
 	            		System.out.println(valorEntregado - valorAPagar + "$");
 	            	}
-	            	else {
+	            	else if(rta == 1){
 	            		System.out.println("\t\tNo cobra nada, es un vehiculo gubernamental\n");
 	            		archivoFinal[1][0] += 1;
+	            	}
+	            	else {
+	            		System.out.println("\t\tIngrese una opción válida\n");
 	            	}
 	            	break;
             
